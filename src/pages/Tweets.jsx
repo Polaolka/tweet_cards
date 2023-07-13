@@ -2,15 +2,15 @@
 
 
 import { TweetsEl } from 'components/TweetsEl/TweetsEl';
-import { CouponsStyled } from 'components/Styled/CouponsPage.styled';
+import { TweetsStyled } from 'components/Styled/CouponsPage.styled';
 
 const Tweets = () => {
   return (
-    <CouponsStyled>
+    <TweetsStyled>
       
       <TweetsEl />
 
-    </CouponsStyled>
+    </TweetsStyled>
   );
 };
 

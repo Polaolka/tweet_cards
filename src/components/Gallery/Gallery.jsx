@@ -21,8 +21,8 @@ export const Gallery = () => {
   const [loadedUsers, setLoadedUsers] = useState([]);
   const currentPage = useSelector(selectCurrentPage);
 
-  const isMobile = useMediaQuery({ maxWidth: 860 });
-  const isTablet = useMediaQuery({ maxWidth: 1400 });
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const isTablet = useMediaQuery({ maxWidth: 1280 });
   const pageSize = isMobile ? 3 : isTablet ? 4 : 3;
 
   const users = useSelector(selectAllUsers);

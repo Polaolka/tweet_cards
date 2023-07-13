@@ -20,7 +20,7 @@ import {
 import { TweetItem } from 'components/TweetItem/TweetItem';
 import { selectFavUsers, selectuserById } from 'redux/user/selectors';
 import { updateUserById } from 'redux/user/operations';
-import { addToFavArr, removeFromFavArr } from 'redux/user/slice';
+import { addToFavArr, removeFromFavArr, takeEmptyUser } from 'redux/user/slice';
 
 export const TweetsEl = (location) => {
   const user = useSelector(selectuserById);
@@ -32,7 +32,10 @@ export const TweetsEl = (location) => {
   const dispatch = useDispatch();
 
   const backLinkLocationRef = useRef(location?.state?.from ?? '/');
-
+ const handleBackClick = () => {
+  dispatch(takeEmptyUser());
+  
+ }
   const addToFavorite = () => {
     const user = {
       id,
@@ -68,7 +71,7 @@ export const TweetsEl = (location) => {
 
   return (
     <TweetsBox>
-      <LinkStyled to={backLinkLocationRef.current}>&#8592; Go back</LinkStyled>
+      <LinkStyled to={backLinkLocationRef.current} onClick={handleBackClick}>&#8592; Go back</LinkStyled>
       <ItemStyled>
       <RectStyled></RectStyled>
       <LogoThumbStyled />

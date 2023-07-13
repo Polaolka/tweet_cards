@@ -39,6 +39,15 @@ const userSlice = createSlice({
     },
     firstPage: (state, action) => {
       state.currentPage = 1;
+    },
+    takeEmptyUser: (state, action) => {
+      state.user = {
+        id: '',
+        name: '',
+        avatar: '',
+        tweets: [],
+        followers: null,
+      };
     }
   },
   extraReducers: builder => {
@@ -94,5 +103,5 @@ const userSlice = createSlice({
       
   },
 });
-export const { addToFavArr, removeFromFavArr, selectCategory, nextPage, firstPage } = userSlice.actions;
+export const { addToFavArr, removeFromFavArr, selectCategory, nextPage, firstPage, takeEmptyUser } = userSlice.actions;
 export const userReducer = userSlice.reducer;
