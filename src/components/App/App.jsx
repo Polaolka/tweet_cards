@@ -8,7 +8,7 @@ import Home from 'pages/Home';
 import { selectIsLoading } from 'redux/loader/selectors';
 import { ToastContainer } from 'react-toastify';
 
-// const Home = lazy(() => import('pages/Home'));
+
 const Tweets = lazy(() => import('pages/Tweets'));
 
 const App = () => {

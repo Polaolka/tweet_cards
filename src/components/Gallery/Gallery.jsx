@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from 'react-responsive';
 import { UserItem } from '../UserItem/UserItem';
 import { BtnWrapper, FoodsListWrapper, LoadMoreBtn } from './Gallery.styled';
 import { useDispatch, useSelector } from 'react-redux';
@@ -9,7 +9,7 @@ import {
   selectAllUsers,
   selectFavUsers,
   selectTweetsCategory,
-  selectCurrentPage
+  selectCurrentPage,
 } from '../../redux/user/selectors';
 import { nextPage } from 'redux/user/slice';
 
@@ -61,29 +61,28 @@ export const Gallery = () => {
 
   return (
     <>
-    <FoodsListWrapper>
-      {loadedUsers?.map(({ id, name, avatar, tweets, followers }) => (
-        <UserItem
-          // onClickImg={onClickImg}
-          avatar={avatar}
-          key={`${id}`}
-          id={id}
-          name={name}
-          tweetsNum={tweets.length}
-          tweets={tweets}
-          followers={followers}
-          target="_blank"
-          rel="noreferrer noopener"
-        />
-      ))}
-
-    </FoodsListWrapper>
-    <BtnWrapper>
-
-      {currentPage < totalPages && (
-        <LoadMoreBtn className='green' onClick={handleLoadMore}>Load more</LoadMoreBtn>
-      )}
-    </BtnWrapper>
-      </>
+      <FoodsListWrapper>
+        {loadedUsers?.map(({ id, name, avatar, tweets, followers }) => (
+          <UserItem
+            avatar={avatar}
+            key={`${id}`}
+            id={id}
+            name={name}
+            tweetsNum={tweets.length}
+            tweets={tweets}
+            followers={followers}
+            target="_blank"
+            rel="noreferrer noopener"
+          />
+        ))}
+      </FoodsListWrapper>
+      <BtnWrapper>
+        {currentPage < totalPages && (
+          <LoadMoreBtn className="green" onClick={handleLoadMore}>
+            Load more
+          </LoadMoreBtn>
+        )}
+      </BtnWrapper>
+    </>
   );
 };

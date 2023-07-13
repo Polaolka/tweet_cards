@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-// import { container } from 'helpers';
+
 
 export const HomeStyled = styled.div`
   display: flex;
