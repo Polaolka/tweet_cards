@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tweet_cards/static/css/main.1fba8113.css",
-    "main.js": "/tweet_cards/static/js/main.956e1fe8.js",
-    "static/js/431.a4e1d005.chunk.js": "/tweet_cards/static/js/431.a4e1d005.chunk.js",
+    "main.js": "/tweet_cards/static/js/main.a9d8f44d.js",
+    "static/js/431.f9fe010e.chunk.js": "/tweet_cards/static/js/431.f9fe010e.chunk.js",
     "static/media/QA.png": "/tweet_cards/static/media/QA.76d0dab6d0e2a1aed2b7.png",
     "static/media/picture_Ask_Quest.png": "/tweet_cards/static/media/picture_Ask_Quest.86562350dcaa714a1442.png",
     "static/media/Ellipse_Stroke.svg": "/tweet_cards/static/media/Ellipse_Stroke.3d6d9554d43627f2e2a26ff9f19dec2f.svg",
@@ -10,11 +10,11 @@
     "static/media/done_outline.svg": "/tweet_cards/static/media/done_outline.86c146b510bc3fd39e0da65c08e06f22.svg",
     "static/media/arrow.svg": "/tweet_cards/static/media/arrow.399574a3cc871c273f34fb42a15de060.svg",
     "main.1fba8113.css.map": "/tweet_cards/static/css/main.1fba8113.css.map",
-    "main.956e1fe8.js.map": "/tweet_cards/static/js/main.956e1fe8.js.map",
-    "431.a4e1d005.chunk.js.map": "/tweet_cards/static/js/431.a4e1d005.chunk.js.map"
+    "main.a9d8f44d.js.map": "/tweet_cards/static/js/main.a9d8f44d.js.map",
+    "431.f9fe010e.chunk.js.map": "/tweet_cards/static/js/431.f9fe010e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1fba8113.css",
-    "static/js/main.956e1fe8.js"
+    "static/js/main.a9d8f44d.js"
   ]
 }
