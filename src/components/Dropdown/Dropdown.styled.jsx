@@ -1,21 +1,28 @@
 import styled from '@emotion/styled';
 import { ReactComponent as Arrow } from '../../images/arrow.svg';
+import { mediaSizes } from 'constants/media';
 
 export const DropContainer = styled.div`
   position: relative;
   width: 140px;
   height: 40px;
   background-color: transparent;
-  border: 1px solid #EBD8FF;
+  border: 1px solid #ebd8ff;
   border-radius: 12px;
   &.active {
     width: 320px;
     justify-content: start;
+
   }
   &:hover {
-    border: 1px solid #5CD3A8;
+    border: 1px solid #5cd3a8;
   }
-  
+  @media screen and (max-width: ${mediaSizes.tablet}) {
+    &.active {
+    width: 280px;
+  }
+    }
+  /* 300px; */
 `;
 
 export const ArrowStyled = styled(Arrow)`
@@ -27,6 +34,10 @@ export const ArrowStyled = styled(Arrow)`
   transform: rotate(-90deg);
   &.active {
     transform: rotate(90deg);
+  }
+  @media screen and (max-width: ${mediaSizes.tablet}) {
+    width: 10px;
+    height: 10px;
   }
 `;
 
@@ -43,6 +54,9 @@ export const ListStyled = styled.ul`
   cursor: pointer;
   font-family: inherit;
   font-size: 100%;
+  @media screen and (max-width: ${mediaSizes.tablet}) {
+    gap: 8px;
+  }
 `;
 
 export const DropBtn = styled.button`
@@ -56,7 +70,7 @@ export const DropBtn = styled.button`
   align-items: center;
   padding: 8px 16px 8px 8px;
   cursor: pointer;
-  color: #EBD8FF;
+  color: #ebd8ff;
   &.active {
     justify-content: start;
     padding: 8px 24px 8px 8px;
@@ -68,10 +82,13 @@ export const LiItem = styled.li`
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: -0.03em;
-  color: #EBD8FF;
+  color: #ebd8ff;
   background-color: transparent;
   &:hover {
-    color: #5CD3A8;
+    color: #5cd3a8;
+  }
+  @media screen and (max-width: ${mediaSizes.tablet}) {
+    font-size: 12px;
   }
 `;
 
