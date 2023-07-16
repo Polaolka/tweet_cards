@@ -32,12 +32,4 @@ export const LinkStyled = styled(NavLink)`
   position: relative;
   top: 2px;
   margin-left: 15px;
-
-
-  &:hover {
-  }
-
-  &.active {
-  }
-
 `;

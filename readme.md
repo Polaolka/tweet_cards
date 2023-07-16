@@ -30,7 +30,6 @@ The project was implemented by:
   <a href="https://github.com/Polaolka">
   	<img width="125" src="https://avatars.githubusercontent.com/u/101866764" alt="Olga Polishchuk" border="0">
    </a>
-
 </p>
 
 - [**Olga Polishchuk**: Full-stack developer](https://github.com/Polaolka)

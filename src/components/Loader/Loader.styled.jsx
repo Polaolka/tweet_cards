@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { Triangle } from 'react-loader-spinner';
-import img from 'images/strawberry-small.png';
+
 
 import { ReactComponent as Done } from 'images/done_outline.svg';
 
@@ -46,45 +46,4 @@ export const DoneImg = styled(Done)`
     }
 `;
 
-export const LoaderSmallStyled = styled.div`
-  margin: 0 auto;
-  width: 47px;
-  height: 49px;
-  background: url(${img}) no-repeat center;
-  background-size: contain;
-  animation: spin 1.5s infinite linear;
 
-  &.eatenProducts {
-    margin: 50px auto;
-  }
-
-  &.deleteProduct {
-    position: absolute;
-    right: -2px;
-    top: -4px;
-    width: 30px;
-    height: 30px;
-  }
-
-  &.addProduct {
-    position: absolute;
-    right: -42px;
-    top: 16px;
-    width: 30px;
-    height: 30px;
-  }
-
-  &.addProductMobile {
-    width: 30px;
-    height: 30px;
-    margin-top: -30px;
-    position: relative;
-    top: 40px;
-  }
-
-  @keyframes spin {
-    to {
-      transform: rotate(360deg);
-    }
-  }
-`;

@@ -9,7 +9,7 @@ display: flex;
 justify-content: center;
 `
 
-export const FoodsListWrapper = styled.div`
+export const TweetListWrapper = styled.div`
 ${container}
   display: flex;
   width: 100%;

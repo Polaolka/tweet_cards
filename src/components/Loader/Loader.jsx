@@ -1,6 +1,5 @@
 import {
   LoaderContainer,
-  LoaderSmallStyled,
   LoaderStyled,
   StyledTriangle,
   DoneImg,
@@ -24,6 +23,4 @@ export const Loader = () => {
   );
 };
 
-export const LoaderSmall = ({ name }) => {
-  return <LoaderSmallStyled className={name} />;
-};
+

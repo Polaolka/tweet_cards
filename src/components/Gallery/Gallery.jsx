@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { UserItem } from '../UserItem/UserItem';
-import { BtnWrapper, FoodsListWrapper, LoadMoreBtn } from './Gallery.styled';
+import { BtnWrapper, TweetListWrapper, LoadMoreBtn } from './Gallery.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { getAllUsers } from '../../redux/user/operations';
 
@@ -61,7 +61,7 @@ export const Gallery = () => {
 
   return (
     <>
-      <FoodsListWrapper>
+      <TweetListWrapper>
         {loadedUsers?.map(({ id, name, avatar, tweets, followers }) => (
           <UserItem
             avatar={avatar}
@@ -75,7 +75,7 @@ export const Gallery = () => {
             rel="noreferrer noopener"
           />
         ))}
-      </FoodsListWrapper>
+      </TweetListWrapper>
       <BtnWrapper>
         {currentPage < totalPages && (
           <LoadMoreBtn className="green" onClick={handleLoadMore}>
